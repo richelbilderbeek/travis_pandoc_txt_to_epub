@@ -2,6 +2,5 @@ install:
   - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
 
 script:
-  # Convert text
   - pandoc example.txt -o my_txt_epub.epub
   - epubcheck my_txt_epub.epub
